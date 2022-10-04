@@ -63,7 +63,7 @@ const Form: Component<FormProps> = (props: FormProps) => {
     })
 
     const element = document.createElement('a');
-    element.setAttribute('href','data:text/plain;charset=utf-8, ' + encodeURIComponent(val));
+    element.setAttribute('href','data:text/plain;charset=utf-8,' + encodeURIComponent(val));
     element.setAttribute('download', filename(title() + ".md"));
     document.body.appendChild(element);
     element.click();
