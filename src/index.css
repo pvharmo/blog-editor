@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.form-control {
+    margin: 1rem auto;
+}
+
+.milkdown .editor {
+    padding: 5px 20px !important;
+}
