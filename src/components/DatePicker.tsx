@@ -1,3 +1,5 @@
+import {format} from 'date-fns'
+
 interface InputInterface {
     label: string
     defaultValue: Date
@@ -16,7 +18,7 @@ export default (props: InputInterface) => {
             type={props.type || "text"}
             placeholder={props.placeholder || ""}
             class="input input-bordered"
-            value={props.defaultValue.toLocaleDateString()}
-            onChange={(event) => props.onChange(new Date(event.currentTarget.value))} />
+            value={format(props.defaultValue, "yyyy-MM-dd")}
+            onblur={(event) => {console.log(event.currentTarget.value); return props.onChange(new Date(event.currentTarget.value))}} />
     </div>
 }

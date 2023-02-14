@@ -29,6 +29,7 @@
     "@milkdown/utils": "^6.4.1",
     "@types/marked": "^4.0.7",
     "daisyui": "^2.31.0",
+    "date-fns": "^2.29.3",
     "js-yaml": "^4.1.0",
     "marked": "^4.1.1",
     "solid-js": "^1.5.1"
