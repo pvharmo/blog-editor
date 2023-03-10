@@ -23,7 +23,7 @@ const arrayToString = (options: string[]) => {
 export const format = ({markdown, title, author, youtubeMovieTrailer, categories, tags, excerpt, date}: MarkdownProps) => {
     
     return `---
-title: ${title}
+title: "${title}"
 author: ${author}
 youtubeMovieTrailer: ${youtubeMovieTrailer}
 date: ${date.toISOString()}
