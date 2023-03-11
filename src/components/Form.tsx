@@ -23,6 +23,7 @@ const Form: Component<FormProps> = (props: FormProps) => {
   
   const categoriesOptions = [
     {id: "", label: "Aucune"},
+    {id: "Bullet comments", label: "Commentaires éclairs"},
     {id: "Revisiting classics", label: "Classiques revisités"},
     {id: "More on hermeneutics", label: "Plus sur l'herméneutique"},
     {id: "Economics", label: "Économie"},
