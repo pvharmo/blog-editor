@@ -31,7 +31,8 @@ category:
 ${arrayToString(categories)}
 tags:
 ${arrayToString(tags)}
-excerpt: ${excerpt.replaceAll(/\n/g, '\n  ')}
+excerpt: >-
+ ${excerpt.replaceAll(/\n/g, '\n ')}
 ---
 ${markdown}`
 }
